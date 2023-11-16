@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500&display=swap");
+@media screen and (max-width: 600px) {
+    .container {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .card {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  .row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+body {
+    background-color: rgb(10, 23, 27) !important;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* background-color: #141626 !important; */
+  }
+  /* section{
+    scroll-margin-top: 10px;
+    min-height: 5em;
+    padding: 0px 0%;
+} */
+.container {
+    float: left;
+    /* width: 25%; */
+    padding: 0 10px;
+  display: grid;
+  grid-template-columns: 40%;
+  grid-gap: 70px;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  background-color: rgb(10, 23, 27);
+  font-family: 'Baloo Paaji 2', cursive;
+}
+
+.card {
+  background-color: #222831;
+  height: 30rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+
+.card__name {
+  margin-top: 10px;
+  font-size: 1.5em;
+}
+
+.card__image {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 5px solid #272133;
+  margin-top: 20px;
+  box-shadow: 0 10px 50px rgba(235, 25, 110, 1);
+}
+
+
+.draw-border {
+  box-shadow: inset 0 0 0 4px #58cdd1;
+  color: #58afd1;
+  -webkit-transition: color 0.25s 0.0833333333s;
+  transition: color 0.25s 0.0833333333s;
+  position: relative;
+}
+
+.draw-border::before,
+.draw-border::after {
+  border: 0 solid transparent;
+  box-sizing: border-box;
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  width: 0rem;
+  height: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.draw-border::before {
+  border-bottom-width: 4px;
+  border-left-width: 4px;
+}
+
+.draw-border::after {
+  border-top-width: 4px;
+  border-right-width: 4px;
+}
+
+.draw-border:hover {
+  color: #ffe593;
+}
+
+.draw-border:hover::before,
+.draw-border:hover::after {
+  border-color: #eb196e;
+  -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
+  transition: border-color 0s, width 0.25s, height 0.25s;
+  width: 100%;
+  height: 100%;
+}
+
+.draw-border:hover::before {
+  -webkit-transition-delay: 0s, 0s, 0.25s;
+  transition-delay: 0s, 0s, 0.25s;
+}
+
+.draw-border:hover::after {
+  -webkit-transition-delay: 0s, 0.25s, 0s;
+  transition-delay: 0s, 0.25s, 0s;
+}
+
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1.5;
+  font: 100 1.2rem 'Roboto Slab', sans-serif;
+  padding: 0.75em 2em;
+  letter-spacing: 0.05rem;
+  margin: 0.1em;
+  width: 10rem;
+  bottom: -10%;
+}
+
+.btn:focus {
+  outline: 2px dotted #55d7dc;
+}
+
+
+.social-icons {
+  padding: 0;
+  list-style: none;
+  margin: 1em;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin: 0.15em;
+  position: relative;
+  font-size: 1em;
+}
+
+.social-icons i {
+  color: #fff;
+  position: absolute;
+  top: 0.95em;
+  left: 0.96em;
+  transition: all 265ms ease-out;
+}
+
+.social-icons a {
+  display: inline-block;
+}
+
+.social-icons a:before {
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  content: " ";
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  display: block;
+  background: linear-gradient(45deg, #ff003c, #c648c8);
+  transition: all 265ms ease-out;
+}
+
+.social-icons a:hover:before {
+  transform: scale(0);
+  transition: all 265ms ease-in;
+}
+
+.social-icons a:hover i {
+  transform: scale(2.2);
+  -ms-transform: scale(2.2);
+  -webkit-transform: scale(2.2);
+  color: #ff003c;
+  background: -webkit-linear-gradient(45deg, #ff003c, #c648c8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 265ms ease-in;
+}
+
+.grid-container {
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr; */
+  /* grid-gap: 20px; */
+  font-size: 1.2em;
+  margin-left: 10px;
+}
+
+/* ttttttttttttttttttttttttttttttttttttttttttnavvvvvvvvvvvvvvvvvvvvvvvvv */
+/* body{
+    margin:0;
+    padding:0;
+    font-family: arial;
+ 
+} */
+.menu{
+    width:100%;
+    background-color: rgb(14, 27, 32);
+    overflow:auto;
+    font-family: 'Baloo Paaji 2', cursive;
+
+}
+.menu ul{
+   margin-top: 10px;
+    padding:0;
+    list-style:none;
+    line-height: 4.5em;
+}
+.menu ul li{
+    float:left;
+}
+.menu ul li a{
+    text-decoration:none;
+    width:100px;
+    display: block;
+    text-align:center;
+    font-size: 15px;
+    text-transform: uppercase;
+    /* font-weight: bold; */
+    color:#fff;
+}
+/* .menu ul li a:hover{
+    background:#12122b;
+} */
+/* .menu ul li a.active{
+    background:orange;
+} */
+.menu ul li img{
+    width: 50px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.toggle-nav{
+    color:#fff;
+    text-decoration:none;
+    display: none;
+}
+.social{
+    float: right;
+    margin-right: 100px;
+    line-height: 70px;
+}
+.social a{
+    max-width: 50px;
+    text-align:center;
+}
+.social a i{
+    font-size: 20px;
+    background:#fff;
+    width:40px;
+    height: 40px;
+    line-height: 40px;
+    color:#000;
+    border-radius: 50%;
+    margin:5px;
+}
+.social a i:hover{
+    background:#6666ff;
+    color:#fff;
+}
+@media(max-width:800px){
+    .toggle-nav{
+        font-size:40px;
+        text-align:center;
+        font-weight: bold;
+        padding:10px 0px 10px 0px;
+        background:#6666ff;
+        width:100%;
+        display: block;
+    }
+    .menu ul li a{
+        width:100%;
+    }
+    .menu ul li{
+        float:none;
+        width:100%;
+        display: none;;
+    }
+    .social{
+        width:100%;
+        text-align:center;
+        border-top:1px solid #fff;
+        float:none;
+    }
+}
+@media(min-width:850px){
+    .menu ul li{
+        display: block !important;
+    }
+}
