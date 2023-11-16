@@ -38,7 +38,7 @@ body {
     float: left;
     /* width: 25%; */
     padding: 0 10px;
-  display: grid;
+  display: flexbox;
   grid-template-columns: 40%;
   grid-gap: 70px;
   justify-content: center;
