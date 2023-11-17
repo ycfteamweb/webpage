@@ -293,12 +293,13 @@ body {
 }
 @media(max-width:800px){
     .toggle-nav{
-        font-size: 58px;
+        font-size: 20px;
         text-align: unset;
         font-weight: bold;
-        padding:10px 0px 10px 0px;
-        background:#6666ff;
-        width:100%;
+        padding:5px 0px 5px 0px;
+        /* background:#000000; */
+        background: rgb(0, 0, 0)
+        width: 100%;
         display: flex;
         text-indent: 15px;
     }
@@ -308,7 +309,7 @@ body {
     .menu ul li{
         float:none;
         width:100%;
-        display: none;;
+        display: none;
     }
     .social{
         width:100%;
@@ -337,7 +338,7 @@ body {
     }
     .container {
         float: left;
-        padding: 24px 16px;
+        padding: 1px 16px;
         grid-template-columns: 40%;
         grid-gap: 70px;
         justify-content: center;
