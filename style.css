@@ -66,6 +66,7 @@ body {
   border-radius: 25px;
 }
 
+
 .card__name {
   margin-top: 10px;
   font-size: 1.5em;
@@ -317,9 +318,8 @@ body {
         border-top:1px solid #fff;
         float:none;
     
-    }
-    
-}
+    }    
+  }
 @media(min-width:850px){
     .menu ul li{
         display: block !important;
