@@ -18,19 +18,36 @@
                 $(".menu ul li").slideToggle("slow");
             });
         });
+        function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
     </script>
 </head>
 <body>
-    <nav class="menu">
+</div>
+<div class="topnav" id="myTopnav">
+    
+    <a href="#home" class="active"></a>
+    <a href="#home">Home</a>
+    <a href="https://ctf.ycfteam.in" target="_blank">Blog</a>
+    <a href="#hof">Hall of Fame</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+    <!-- <nav class="menu">
         <a class="toggle-nav" href="#">&#9776;</a>
         <ul>
             <li><img class="active" src="YCF-1.png" alt="" ></li>
 
             <li><a class ="active" href="#">Home</a></li>
-            <!-- <li><a href="#">News</a></li> -->
             <li><a href="https://blog.ycfteam.in" target="_blank">Blog</a></li>
             <li><a href="about.html" target="_blank" >About</a></li>
-            <!-- <li><a href="#">Privacy</a></li> -->
             <li><a href="#">Contact</a></li>
         </ul>
         <div class="social">
@@ -40,7 +57,7 @@
             <a href="#"><i class="fa fa-instagram"></i></a>
             <a href="#"><i class="fa fa-linkedin"></i></a>
         </div>
-     </nav>
+     </nav> -->
     </body>
     <section  class="sec">
         <!-- <div class="row"> -->
