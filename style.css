@@ -40,7 +40,7 @@ body {
 } */
 .container {
     float: left;
-    /* width: 25%; */
+    /* width: 100%; */
     padding: 0px 100px;
     display: flexbox;
     grid-template-columns: 40%;
@@ -136,6 +136,18 @@ body {
   transition-delay: 0s, 0.25s, 0s;
 }
 
+/* .btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1.5;
+  font: 100 1.2rem 'Roboto Slab', sans-serif;
+  padding: 0.75em 2em;
+  letter-spacing: 0.05rem;
+  margin: 0.1em;
+  width: 10rem;
+  bottom: -10%;
+} */
 .btn {
   background: none;
   border: none;
@@ -147,6 +159,11 @@ body {
   margin: 0.1em;
   width: 10rem;
   bottom: -10%;
+
+  /* Center the button */
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 .btn:focus {
