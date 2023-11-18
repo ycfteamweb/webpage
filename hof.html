@@ -8,32 +8,91 @@
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500&display=swap">
+
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 
   <title>YCTF - Weekly Winners</title>
   <style>
-    body {
-      background-color: #222831;
-      color: rgb(255, 255, 255);
-      font-family: 'Baloo Paaji 2', cursive;
-      margin: 0;
-      padding: 0;
-    }
+        /* @import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500&display=swap"); */
 
-    header {
-      text-align: center;
-      padding: 1em;
-      background-color: #222831;
-      color: rgb(255, 255, 255);
-    }
-    .winners-section {
+    
+
+/* new CSSssssssssssssssssssssssssssss */
+    body {
+  background-color: #222831;
+  color: rgb(255, 255, 255);
+  font-family: 'Baloo Paaji 2', cursive;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+  padding: 1em;
+  background-color: #222831;
+  color: rgb(255, 255, 255);
+}
+
+.logo {
+  margin: 10px;
+  width: 100px; /* Set your desired width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #191c21;
+  padding: 1em;
+}
+
+nav a {
+  color: #61dafb;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 1.2em;
+}
+
+nav a:hover {
+  border-bottom: 2px solid #61dafb;
+}
+
+.winners-section,
+.previous-winners-section {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   margin-top: 20px; /* Adjust the margin as needed */
 }
-    .winner-card {
+/* .winners-section,
+.previous-winners-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px; 
+  margin-left: 5%; 
+  margin-right: 5%; 
+}
+
+.winners-section, .previous-winners-section {
+  border-bottom: 2px solid rgb(64, 234, 84);
+  margin-bottom: 20px; 
+} */
+.winners-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px; /* Adjust the margin as needed */
+}
+
+.winner-card {
       background-color: rgb(10, 23, 27);
       color: #ffffff;
       border: 2px solid rgb(64, 234, 84);
@@ -45,62 +104,32 @@
       vertical-align: top;
     }
 
-    a {
-      color: #61dafb;
-      text-decoration: none;
-    }
-
-    h2 {
-      margin-bottom: 0.5em;
-    }
-
-    .winners-section,
-.previous-winners-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-top: 20px; /* Adjust the margin as needed */
-  margin-left: 5%; /* 10% left margin */
-  margin-right: 5%; /* 10% right margin */
+a {
+  color: #61dafb;
+  text-decoration: none;
 }
 
-.winners-section, .previous-winners-section {
-  border-bottom: 2px solid rgb(64, 234, 84);
-  margin-bottom: 20px; /* Adjust the margin as needed */
+h2 {
+  margin-bottom: 0.5em;
 }
-.logo {
-      margin: 10px;
-    }
-    @media (max-width: 600px) {
-      nav {
-        flex-direction: row;
-        padding: 0.5em;
-      }
 
-      nav a {
-        padding: 5px;
-        font-size: 1em;
-      }
-    }
-nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #191c21;
-      padding: 1em;
-    }
+/* Media query for responsive design */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: row;
+    padding: 0.5em;
+  }
 
-nav a {
-      color: #61dafb;
-      text-decoration: none;
-      padding: 10px;
-      font-size: 1.2em;
-    }
+  nav a {
+    padding: 5px;
+    font-size: 1em;
+  }
 
-nav a:hover {
-      border-bottom: 2px solid #61dafb;
-    }
+  .logo {
+    width: 80px; /* Adjust the size as needed for smaller screens */
+  }
+}
+
   </style>
 </head>
 <body>
