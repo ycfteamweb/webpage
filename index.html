@@ -1,123 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YCF Team</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shorthandcss@1.1.1/dist/shorthand.min.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700,800,900&display=swap" />
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script>
-        $(document).ready(function(){
-            $(".toggle-nav").click(function(){
-                $(".menu ul li").slideToggle("slow");
-            });
-        });
-        function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YCTF Weekly - Announcement Page</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      background-color: #222831;
+      color: rgb(255, 255, 255);
+      font-family: 'Baloo Paaji 2', cursive;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    /* header {
+      padding: 1em;
+      background-color: #222831;
+      color: rgb(255, 255, 255);
+      border: 2px solid rgb(64, 234, 84);
+    } */
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin: 20px;
+    }
+
+    .card {
+      background-color: #191c21;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      margin: 20px;
+      padding: 20px;
+      width: 25%;
+      text-align: left;
+      border: 2px solid rgb(64, 234, 84);
+      text-align: justify;
+  text-justify: inter-word;
+    }
+
+    h2 {
+      color: rgb(255, 255, 255);
+      margin-bottom: 1em;
+    }
+
+    p {
+      color: #ccc;
+      line-height: 1.5;
+    }
+
+    .register-button {
+      display: block;
+      margin-top: 20px;
+      padding: 10px;
+      /* background-color: rgb(64, 234, 84); */
+      background-color: #61dafb;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+    /* Media query for responsive design */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .card {
+        width: 80%;
+      }
+    }
+    .logo {
+  margin: 10px;
+  width: 100px; /* Set your desired width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #191c21;
+  padding: 1em;
+}
+
+nav a {
+  color: #61dafb;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 1.2em;
+  font-family: 'Baloo Paaji 2', cursive;
+
+}
+
+nav a:hover {
+  border-bottom: 2px solid #61dafb;
+}
+
+a {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+h2 {
+  margin-bottom: 0.5em;
+}
+
+/* Media query for responsive design */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: row;
+    padding: 0.5em;
+  }
+
+  nav a {
+    padding: 5px;
+    font-size: 1em;
+  }
+
+  .logo {
+    width: 80px; /* Adjust the size as needed for smaller screens */
   }
 }
-    </script>
+  </style>
 </head>
 <body>
-  <nav>
-    <div class="logo">
-      <!-- Your logo image goes here -->
-      <img src="YCF-1.png" alt="Logo" width="50px">
+
+  <header>
+    <!-- Your navigation bar goes here -->
+    <nav>
+      <div class="logo">
+        <!-- Your logo image goes here -->
+        <img src="YCF-1.png" alt="Logo" width="50px">
+      </div>
+      <a href="index.html">Home</a>
+      <a href="https://blog.ycfteam.in">Blog</a>
+      <a href="hof.html">Hall of Fame</a>
+    </nav>
+  </header>
+
+  <div class="container">
+        <!-- Announcement Card -->
+
+    <div class="card">
+      <h2>Announcement: </h2> <h4>YCTF Weekly - 24-Hour Capture The Flag (CTF) Event! 🚩</h4>
+      <p>📅 Date: November 25, 7:00 PM IST<br>
+         🕒 Time: 24 Hours<br>
+         🌐 Location: Online<br>
+         🔐 Challenge your skills and unravel the mysteries of cybersecurity in the YCTF Weekly 24-Hour Capture The Flag (CTF) Event! 🚨 Prepare yourselves for an adrenaline-fueled day of hacking, solving puzzles, and mastering the art of cybersecurity. Whether you're a seasoned professional or a curious beginner, YCTF Weekly welcomes participants of all levels.</p>
+      <a href="https://ctf.ycfteam.in" target="_blank" class="register-button">Register Now</a>
     </div>
-    <a href="#">Home</a>
-    <a href="https://blog.ycfteam.in">Blog</a>
-    <a href="#">Organizers</a>
-    <a href="hof.html">Hall of Fame</a>
-  </nav>
-    <!-- <nav class="menu">
-        <a class="toggle-nav" href="#">&#9776;</a>
-        <ul>
-            <li><img class="active" src="YCF-1.png" alt="" ></li>
+    
 
-            <li><a class ="active" href="#">Home</a></li>
-            <li><a href="https://blog.ycfteam.in" target="_blank">Blog</a></li>
-            <li><a href="about.html" target="_blank" >About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        <div class="social">
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-youtube"></i></a>
-            <a href="#"><i class="fa fa-instagram"></i></a>
-            <a href="#"><i class="fa fa-linkedin"></i></a>
-        </div>
-     </nav> -->
-    <!-- <section  class="sec"> -->
-        <!-- <div class="row"> -->
-        <!-- <div class="container">
-            <div class="card">
-                <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7121844587547033600" height="600" width="480" frameborder="0" allowfullscreen="" title="Embedded post" style="border-radius: 20px;"></iframe>
-            </div>
-        </div> -->
-    <!-- </section> -->
-    <section class="sec">
-        <!-- <div class="row"> -->
-        <div class="container">
-            <div class="card">
-                
-              <!-- <img src="https://lh3.googleusercontent.com/oUUiPB9sq3ACq4bUaRmo8pgvC4FUpRRrQKcGIBSOsafawZfRpF1vruFeYt6uCfL6wGDQyvOi6Ez9Bpf1Fb7APKjIyVsft7FLGR6QqdRFTiceNQBm1In9aZyrXp33cZi9pUNqjHASdA=s170-no" alt="Person" class="card__image"> -->
-              <p class="card__name">Announcements
-              </p>
-              <br>
-              <div class="grid-container">
-                                
-              <p>🚀 Announcement: YCTF Weekly - 24-Hour Capture The Flag (CTF) Event! 🚩</p>
+    <!-- Social Media and Writeup Card -->
+    <div class="card">
+      <h2>Social Media Links</h2>
+      <p>Connect with us on:</p>
+      <ul>
+        <li><a href="#" target="_blank"><i class="fa fa-twitter"></i> Twitter</a></li>
+        <li><a href="https://linkedin.com/company/ycfteam" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
+        <li><a href="http://instagram.com/ycfteam" target="_blank"><i class="fa fa-instagram"></i> Instagram</a></li>
+      </ul>
+      <p>Writeup Link: <a href="https://blog.ycfteam.in" target="_blank">Read Now</a></p>
+    </div>
 
-              <p>📅 Date: November 25, 7:00 PM IST</p> 
-            
-              <p>🕒 Time: 24 Hours</p>
-            
-              <p>🌐 Location: Online</p>
-            
-              <p>🔐 Challenge your skills and unravel the mysteries of cybersecurity in the YCTF Weekly 24-Hour Capture The Flag (CTF) Event! 🚨
-            
-                Prepare yourselves for an adrenaline-fueled day of hacking, solving puzzles, and mastering the art of cybersecurity. Whether you're a seasoned professional or a curious beginner, YCTF Weekly welcomes participants of all levels.</p>
-                <!-- <div class="grid-child-posts">
-                  305 Post
-                </div>
-          
-                <div class="grid-child-followers">
-                  2643 Likes
-                </div> -->
-                <button class="btn draw-border"><a href="https://ctf.ycfteam.in" target="_blank" style="text-decoration:none;color: white;">Register</a></button>
+<!-- About Us Card -->
+<div class="card">
+  <h2>About Us</h2>
+  <p>Indian Security Research & CTF Team: </p>
+    
+    <p>Elevating Cybersecurity Expertise
 
-          
-              </div>
-              <!-- <ul class="social-icons">
-                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="#"><i class="fa fa-codepen"></i></a></li>
-              </ul> -->
-              
-              <!-- <button class="btn draw-border"><a href="https://ctf.ycfteam.in" target="_blank" style="text-decoration:none;color: white;">Register</a></button> -->
-            </div>
+    The Indian Security Research & CTF Team unites cybersecurity enthusiasts in India. Committed to fostering knowledge, conducting ethical hacking, and advancing cyber defense, the team actively engages in Capture The Flag competitions, vulnerability assessments, and proactive security research. Our mission is to elevate cybersecurity expertise and promote ethical hacking practices in India and beyond.</p>
+    <p>Contact: <a href="mailto:info@ycfteam.in">info@ycfteam.in</a></p>
+</div>
+  </div>
 
-            <!-- New card -->
-          
-          </div>
-         
-
-          <!-- Next card -->
-          
-
-        <!-- Next card -->
-        
-    </section>
-      
 </body>
+</html>
