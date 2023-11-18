@@ -378,139 +378,43 @@ body {
     border-radius: 15px;
 }
 /* 7bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb */
-/* .topnav {
-  overflow: hidden;
-  background-color: #333;
+.logo {
+  margin: 10px;
+  width: 100px; /* Set your desired width */
+  height: auto; /* Maintain aspect ratio */
 }
 
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #191c21;
+  padding: 1em;
+}
+
+nav a {
+  color: #61dafb;
   text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-} */
-
-/* .topnav a.active {
-  background-image: url(YCF-1.png);
-  background-repeat: no-repeat;
-  height: 54px;
-  line-height: 50px; 
-  display: inline-block; 
-  padding: 0 10px; 
-  text-decoration: none; 
-  overflow: hidden;
-  color: white;
-}
-
-.topnav .icon {
-  display: none;
-} */
-
-/* @media screen and (max-width: 600px) { */
-  /* .topnav a:not(:first-child) {
-    display: none;
-  } */
-  /* .topnav a.icon {
-    float: right;
-    display: block;
-  } */
-/* } */
-
-/* @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-} */
-
-
-/* new naavvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv */
-/* .topnav {
-  overflow: hidden;
-  background-color: rgb(11, 19, 22);
+  padding: 10px;
+  font-size: 1.2em;
   font-family: 'Baloo Paaji 2', cursive;
 
 }
 
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
+nav a:hover {
+  border-bottom: 2px solid #61dafb;
+}
+
+a {
+  color: #61dafb;
   text-decoration: none;
-  font-size: 17px;
 }
 
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
+h2 {
+  margin-bottom: 0.5em;
 }
 
-.topnav a.active {
-  background-image: url(YCF-1.png); 
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 54px;
-  width: 54px; 
-  display: inline-block;
-  padding: 0;
-  text-decoration: none;
-  overflow: hidden;
-}
-
-.topnav .icon {
-  display: none;
-} */
-/* 
-@media screen and (max-width: 600px) {
-  
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive {
-    position: relative;
-  }
-  .topnav.responsive a {
-    display: block;
-    text-align: left;
-  }
-  .topnav a.active {
-    display: block;
-    text-align: left;
-  }
-} */
-
-/* New navigation */
-.logo {
-  margin: 10px;
-}
+/* Media query for responsive design */
 @media (max-width: 600px) {
   nav {
     flex-direction: row;
@@ -521,24 +425,8 @@ body {
     padding: 5px;
     font-size: 1em;
   }
-}
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #191c21;
-  padding: 1em;
 
-}
-
-nav a {
-  color: #61dafb;
-  text-decoration: none;
-  padding: 10px;
-  font-size: 1.2em;
-  font-family: 'Baloo Paaji 2', cursive;
-}
-
-nav a:hover {
-  border-bottom: 2px solid #61dafb;
+  .logo {
+    width: 80px; /* Adjust the size as needed for smaller screens */
+  }
 }
