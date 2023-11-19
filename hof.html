@@ -9,126 +9,13 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500&display=swap">
-
+    <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 
   <title>YCTF - Weekly Winners</title>
   <style>
         /* @import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500&display=swap"); */
-
-    
-
 /* new CSSssssssssssssssssssssssssssss */
-    body {
-  background-color: #222831;
-  color: rgb(255, 255, 255);
-  font-family: 'Baloo Paaji 2', cursive;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-header {
-  padding: 1em;
-  background-color: #222831;
-  color: rgb(255, 255, 255);
-}
-
-.logo {
-  margin: 10px;
-  width: 100px; /* Set your desired width */
-  height: auto; /* Maintain aspect ratio */
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #191c21;
-  padding: 1em;
-}
-
-nav a {
-  color: #61dafb;
-  text-decoration: none;
-  padding: 10px;
-  font-size: 1.2em;
-}
-
-nav a:hover {
-  border-bottom: 2px solid #61dafb;
-}
-
-.winners-section,
-.previous-winners-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-top: 20px; /* Adjust the margin as needed */
-}
-/* .winners-section,
-.previous-winners-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-top: 20px; 
-  margin-left: 5%; 
-  margin-right: 5%; 
-}
-
-.winners-section, .previous-winners-section {
-  border-bottom: 2px solid rgb(64, 234, 84);
-  margin-bottom: 20px; 
-} */
-.winners-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-top: 20px; /* Adjust the margin as needed */
-}
-
-.winner-card {
-      background-color: rgb(10, 23, 27);
-      color: #ffffff;
-      border: 2px solid rgb(64, 234, 84);
-      border-radius: 8px;
-      padding: 20px;
-      margin: 20px;
-      width: 300px;
-      display: inline-block;
-      vertical-align: top;
-    }
-
-a {
-  color: #61dafb;
-  text-decoration: none;
-}
-
-h2 {
-  margin-bottom: 0.5em;
-}
-
-/* Media query for responsive design */
-@media (max-width: 600px) {
-  nav {
-    flex-direction: row;
-    padding: 0.5em;
-  }
-
-  nav a {
-    padding: 5px;
-    font-size: 1em;
-  }
-
-  .logo {
-    width: 80px; /* Adjust the size as needed for smaller screens */
-  }
-}
 
   </style>
 </head>
@@ -138,11 +25,11 @@ h2 {
   <nav>
     <div class="logo">
       <!-- Your logo image goes here -->
-      <img src="YCF-1.png" alt="Logo" width="50px">
+      <a href="https://ycfteam.in"><img src="assets/images/YCF-1.png" alt="Logo" width="50px"></a>
     </div>
     <a href="index.html">Home</a>
     <a href="https://blog.ycfteam.in">Blog</a>
-    <a href="#">Organizers</a>
+    <a href="team.html">Team</a>
     <a href="hof.html">Hall of Fame</a>
   </nav>
 <!-- <img src="YCF-1.png" class="logo" alt=""> -->
@@ -150,77 +37,16 @@ h2 {
     <h1>YCTF - Weekly Winners</h1>
   </header>
 
-
+<h3>Coming soon...</h3>
 
   <!-- Winner's cards -->
 
-  <section class="winners-section">
-    <h2>This Week's Winners</h2>
 
-    <div class="winner-card">
-      <h2>1st Place</h2>
-      <p>Winner's Name</p>
-      <p><a href="winner_linkedin_profile_link" target="_blank">LinkedIn Profile</a></p>
-    </div>
-
-    <div class="winner-card">
-      <h2>2nd Place</h2>
-      <p>Winner's Name</p>
-      <p><a href="winner_linkedin_profile_link" target="_blank">LinkedIn Profile</a></p>
-    </div>
-
-    <div class="winner-card">
-      <h2>3rd Place</h2>
-      <p>Winner's Name</p>
-      <p><a href="winner_linkedin_profile_link" target="_blank">LinkedIn Profile</a></p>
-    </div>
-  </section>
-
-  <!-- Previous Week's Winners -->
-  <section class="winners-section">
-    <h2>Previous Week's Winners</h2>
-
-    <div class="winner-card">
-      <h2>1st Place</h2>
-      <p>Previous Winner's Name</p>
-      <p><a href="previous_winner_linkedin_profile_link" target="_blank">LinkedIn Profile</a></p>
-    </div>
-    <div class="winner-card">
-        <h2>2nd Place</h2>
-        <p>Previous Winner's Name</p>
-        <p><a href="previous_winner_linkedin_profile_link" target="_blank">LinkedIn Profile</a></p>
-      </div>
-      <div class="winner-card">
-        <h2>3rd Place</h2>
-        <p>Previous Winner's Name</p>
-        <p><a href="previous_winner_linkedin_profile_link" target="_blank">LinkedIn Profile</a></p>
-      </div>
       
 
-    <!-- Repeat the structure for 2nd and 3rd places of the previous week -->
   </section>
-  <section class="winners-section">
-    <h2>Previous Week's Winners</h2>
-
-    <div class="winner-card">
-      <h2>1st Place</h2>
-      <p>Previous Winner's Name</p>
-      <p><a href="previous_winner_linkedin_profile_link" target="_blank">LinkedIn Profile</a></p>
-    </div>
-    <div class="winner-card">
-        <h2>2nd Place</h2>
-        <p>Previous Winner's Name</p>
-        <p><a href="previous_winner_linkedin_profile_link" target="_blank">LinkedIn Profile</a></p>
-      </div>
-      <div class="winner-card">
-        <h2>3rd Place</h2>
-        <p>Previous Winner's Name</p>
-        <p><a href="previous_winner_linkedin_profile_link" target="_blank">LinkedIn Profile</a></p>
-      </div>
-      
-
-    <!-- Repeat the structure for 2nd and 3rd places of the previous week -->
-  </section>
-
+  <footer>
+    <p>&copy; YCF Team 2023. All rights reserved.</p>
+  </footer>
 </body>
 </html>

@@ -1,0 +1,226 @@
+body {
+  background-color: #222831;
+  color: rgb(255, 255, 255);
+  font-family: 'Baloo Paaji 2', cursive;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* header {
+  padding: 1em;
+  background-color: #222831;
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(64, 234, 84);
+} */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.card {
+  background-color: #191c21;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 20px;
+  padding: 20px;
+  width: 25%;
+  text-align: left;
+  border: 2px solid rgb(64, 234, 84);
+  text-align: justify;
+text-justify: inter-word;
+}
+
+h2 {
+  color: rgb(255, 255, 255);
+  margin-bottom: 1em;
+}
+
+p {
+  color: #ccc;
+  line-height: 1.5;
+}
+
+.register-button {
+  display: block;
+  margin-top: 20px;
+  padding: 10px;
+  /* background-color: rgb(64, 234, 84); */
+  background-color: #61dafb;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 80%;
+  }
+}
+.logo {
+margin: 10px;
+width: 100px; /* Set your desired width */
+height: auto; /* Maintain aspect ratio */
+}
+
+nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #191c21;
+padding: 1em;
+}
+
+nav a {
+color: #61dafb;
+text-decoration: none;
+padding: 10px;
+font-size: 1.2em;
+font-family: 'Baloo Paaji 2', cursive;
+
+}
+
+nav a:hover {
+border-bottom: 2px solid #61dafb;
+}
+
+a {
+color: #61dafb;
+text-decoration: none;
+}
+
+h2 {
+margin-bottom: 0.5em;
+}
+
+/* Media query for responsive design */
+@media (max-width: 600px) {
+nav {
+flex-direction: row;
+padding: 0.5em;
+}
+
+nav a {
+padding: 5px;
+font-size: 1em;
+}
+
+.logo {
+width: 80px; /* Adjust the size as needed for smaller screens */
+}
+}
+footer {
+  background-color: #222831;
+  color: #fff;
+  text-align: center;
+  padding: 0.5em;
+  margin-top: 20px; /* Adjust the margin as needed */
+}
+
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+/* header {
+  padding: 1em;
+  background-color: #222831;
+  color: rgb(255, 255, 255);
+} */
+
+
+.winners-section,
+.previous-winners-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px; /* Adjust the margin as needed */
+}
+/* .winners-section,
+.previous-winners-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px; 
+  margin-left: 5%; 
+  margin-right: 5%; 
+}
+
+.winners-section, .previous-winners-section {
+  border-bottom: 2px solid rgb(64, 234, 84);
+  margin-bottom: 20px; 
+} */
+.winners-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px; /* Adjust the margin as needed */
+}
+
+.winner-card {
+      background-color: rgb(10, 23, 27);
+      color: #ffffff;
+      border: 2px solid rgb(64, 234, 84);
+      border-radius: 8px;
+      padding: 20px;
+      margin: 20px;
+      width: 300px;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+/* team */
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.team-member-card {
+  /* background-color: #222831; */
+background-color: #191c21;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 20px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  border: 2px solid rgb(64, 234, 84);
+}
+
+.team-member-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 10px;
+}
+.team-member-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the entire container */
+  border-radius: 50%;
+}
+.team-member-name {
+  color: #fff;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.team-member-linkedin {
+  color: #61dafb;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
