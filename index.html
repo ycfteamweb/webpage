@@ -10,10 +10,10 @@
 <meta name="robots" content="index, follow">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="language" content="English">
-
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/script.js"></script>
   <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
@@ -68,6 +68,8 @@
 </p>
       <a href="https://ctf.ycfteam.in" target="_blank" class="register-button"><strong>Register Now</strong></a>
     </div>
+
+    <!-- Internship announcement -->
     
     <!-- Social Media and Writeup Card -->
     <div class="card">
@@ -95,6 +97,16 @@
     <p>Contact: <a href="mailto:info@ycfteam.in">info@ycfteam.in</a></p>
 </div>
   </div>
+<!-- Popup index page -->
+  <div class="popup" id="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h2>Internship opportunity @ TECHONQUER</h2>
+        <p>We are excited to announce our Internship Partner. Register now to unlock exciting opportunities!</p>
+        <button class="popup-register-button" onclick="register()"><a href="internship.html" target="_blank" rel="noopener noreferrer" style="color: black;">Register now</a></button>
+    </div>
+</div>
+
   <footer>
     <p>&copy; YCF Team 2023. All rights reserved.</p>
   </footer>
