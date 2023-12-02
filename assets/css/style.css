@@ -5,6 +5,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
+  overflow: auto;
 }
 
 /* header {
@@ -19,6 +20,8 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .card {
@@ -75,8 +78,9 @@ nav {
 display: flex;
 justify-content: space-between;
 align-items: center;
-background-color: #191c21;
+backdrop-filter: blur(2px);
 padding: 1em;
+background-color: rgba(0, 0, 0, 0.518);
 }
 
 nav a {
@@ -108,6 +112,7 @@ flex-direction: row;
 padding: 0.5em;
 }
 
+
 nav a {
 padding: 5px;
 font-size: 1em;
@@ -116,13 +121,15 @@ font-size: 1em;
 .logo {
 width: 80px; /* Adjust the size as needed for smaller screens */
 }
+body{
+  overflow: scroll;
+}
 }
 footer {
-  background-color: #222831;
   color: #fff;
   text-align: center;
-  padding: 0.5em;
-  margin-top: 20px; /* Adjust the margin as needed */
+  padding: 0em;
+  margin-top: 0px; /* Adjust the margin as needed */
 }
 
 
@@ -238,7 +245,6 @@ background-color: #191c21;
   height: 100%;
 }
 
-
 .poster {
   width: 100%;
   height: auto;
@@ -246,7 +252,6 @@ background-color: #191c21;
   margin-top: 10px;
 }
 
-/* Popup on index page */
 /* Popup styles */
 .popup {
   display: none;
@@ -291,3 +296,4 @@ background-color: #191c21;
   border-radius: 4px;
 }
 /* Responsive design for smaller screens ... */
+

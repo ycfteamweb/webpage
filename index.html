@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>YCF Team</title>
@@ -10,6 +13,7 @@
 <meta name="robots" content="index, follow">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="language" content="English">
+
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
@@ -47,7 +51,7 @@
       <a href="hall-of-fame.html">Hall of Fame</a>
     </nav>
   </header>
-
+<div id="animation">
   <div class="container">
         <!-- Announcement Card -->
 
@@ -68,8 +72,6 @@
 </p>
       <a href="https://ctf.ycfteam.in" target="_blank" class="register-button"><strong>Register Now</strong></a>
     </div>
-
-    <!-- Internship announcement -->
     
     <!-- Social Media and Writeup Card -->
     <div class="card">
@@ -97,7 +99,8 @@
     <p>Contact: <a href="mailto:info@ycfteam.in">info@ycfteam.in</a></p>
 </div>
   </div>
-<!-- Popup index page -->
+  <!-- Popup index page -->
+
   <div class="popup" id="popup">
     <div class="popup-content">
         <span class="close" onclick="closePopup()">&times;</span>
@@ -106,9 +109,26 @@
         <button class="popup-register-button" onclick="register()"><a href="internship.html" target="_blank" rel="noopener noreferrer" style="color: black;">Register now</a></button>
     </div>
 </div>
-
   <footer>
     <p>&copy; YCF Team 2023. All rights reserved.</p>
   </footer>
+</div>
 </body>
+<script>
+VANTA.NET({
+  el: "body",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 900.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0x18ca61,
+  backgroundColor: 0x0,
+  points: 8.00,
+  maxDistance: 40.00,
+  spacing: 30.00
+})
+</script>
 </html>
