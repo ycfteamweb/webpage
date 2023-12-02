@@ -9,5 +9,5 @@ function closePopup() {
 }
 document.addEventListener("DOMContentLoaded", function() {
     // Show the popup when the page loads
-    showPopup();
+    // showPopup();
 });
